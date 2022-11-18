@@ -1,2 +1,0 @@
-# curso onebitcode
- projetos/aulas
