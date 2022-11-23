@@ -1,16 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício criando um form</title>
-</head>
-<body>
-        
+  </head>
+  <body>
+    <h3>Cadastro da liga dos astronautas</h3>
 
+    <form action="" method="post">
+      <label for="name">Nome</label>
+      <input type="text" required /> <br /><br />
+      <label for="email">Email:</label>
+      <input type="email" required autocomplete="on" />
+      <label for="pwd">-Password</label>
+      <input type="password" name="password" id="password" />
+      <br /><br />
+      <label for="data">Data de Nascimento: </label>
+      <input type="date" />
+      <label for="Foto"> -Foto:</label>
+      <input type="file" /><br /><br />
+      <label for="Nacionalidade">Nacionalidade:</label>
+      <select id="estado" name="estado">
+        <option value="Russo">Russo</option>
+        <option value="Americano">Americano</option>
+        <option value="Brasileiro">Brasileiro</option>
+      </select>
+      <label for="">- Genero:</label>
+      <label for="feminino">F</label>
+      <input type="radio" id="feminino" name="sexo" value="F" />
+      <label for="masculino">M</label>
+      <input type="radio" id="masculino" name="sexo" value="M" /> <br /><br />
+      <label for="">Suas principais qualidades:</label>
+      <br />
+      Inteligência <input type="checkbox" /> | Resiliência
+      <input type="checkbox" /> | Preparo físico <input type="checkbox" /> |
+      Educação <input type="checkbox" /> <br /><br />
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Porque você gostaria de ser um astronauta?"
+      ></textarea>
+      <br /><br />
+      <input type="submit" value="Criar" />
+      <input type="search" list="weapons">
+      <datalist id="weapons" style="display:hidden;">
+        <option value="sword">
+        <option value="axe">
+         <option value="wade">   
+      </datalist>
+    </form>
 
-
-    
-</body>
+    <br /><br /><br />
+    <!--
+    <form action="">
+      <input type="button" />
+      <br>
+      <input type="checkbox" />
+      <br>
+      <input type="color" />
+      <br>
+      <input type="date" />
+      <br>
+      <input type="datetime-local" />
+      <br>
+      <input type="email" />
+      <br>
+        <input type="file" />
+        <br>
+      <input type="hidden" />
+      <br>
+      <input type="image" />
+      <br>
+      <input type="month" />
+      <br>
+      <input type="number" />
+      <br>
+      <input type="password" />
+      <br>
+      <input type="radio" />
+      <br>
+      <input type="range" />
+      <br>
+      <input type="reset" />
+      <br>
+      <input type="search" />
+      <br>
+      <input type="submit" />
+      <br>
+      <input type="tel" />
+      <br>
+      <input type="text" />
+      <br>
+      <input type="time" />
+      <br>
+      <input type="url" />
+      <br>
+      <input type="week" />
+      <br>
+    </form>
+    -->
+  </body>
 </html>
