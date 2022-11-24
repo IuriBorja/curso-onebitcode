@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(225, 252, 252);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+h3, h4, p {
+    text-align: center;
+}
+
+.sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(250, 243, 234);
+    border-radius: 5px;
+}
+
+.arti {
+    background-color: rgb(188, 253, 253);
+    border-radius: 5px;
+}
+
+.arti2 {
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+}
+
+form {
+    text-align: center;
+}
