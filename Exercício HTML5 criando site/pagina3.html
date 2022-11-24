@@ -19,20 +19,21 @@
         </nav>
       </header>
       <hr>
-      <article>
+      <article class="arti2">
         <h3>Hire Us Now</h3>
         <p>Leave a message to request one of our services and we will get back to you as soon as possible.</p>
         <form action="">
             <label for="name">Name:</label>
-            <input type="text" required>
+            <input type="text" id="name" required>
             <label for="email">-Email:</label>
-            <input type="email" required>
+            <input type="email" id="email" required>
             <br><br>
             <label for="spaceship">Spaceship</label>
-            <select name="" id="">
-                <option value="">Falcon 9</option>
-                <option value="">Falcon Heavy</option>
+            <select name="spaceship" id="spaceship">
+                <option value="falcon_9">Falcon 9</option>
+                <option value="falcon_heavy">Falcon Heavy</option>
             </select>
+
             <label for="typeofservice">| Type of Service:</label>
             <input type="search" list="services">
             <datalist id="services" >
