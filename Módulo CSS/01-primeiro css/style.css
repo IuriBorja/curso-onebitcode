@@ -1,0 +1,20 @@
+h1 {
+    font-size: 50px;
+    color: rgb(184, 79, 184);
+    background-color: rgb(216, 195, 195);
+    border: solid 5px yellow;
+}
+
+div {
+    color: blue;
+}
+
+div ul li {
+    color: green;
+}
+
+body {
+    background-image: url(/videos/HD-wallpaper-flamengo-flamengo-mengo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -1,0 +1,44 @@
+ body {
+    background-color: #2c3e50;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    background-color:#f1c40f ;
+    border: solid 2px black;
+}
+
+.primeiro {
+    color: #f1c40f;
+}
+
+li {
+    color: white;
+}
+
+
+.terceiro ul li:nth-last-of-type(1) {
+    color: #e74c3c;
+}
+
+.a {
+    color: #e74c3c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#f1c40f -> Amarelo
+#2c3e50 -> Azul
+#e74c3c -> Vermelho

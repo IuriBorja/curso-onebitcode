@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar&family=Montserrat&family=Open+Sans:ital,wght@1,300&family=Roboto&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    background-color:  #ebd7d7;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 200px 0px 200px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.date {
+    color: #008080;
+    font-family: 'Roboto', sans-serif;
+}
+
+.primeiro, .segundo, .terceiro {
+    padding: 20px;
+}
+
+
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+  }
