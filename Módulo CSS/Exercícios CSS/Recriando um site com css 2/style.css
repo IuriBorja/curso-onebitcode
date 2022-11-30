@@ -30,7 +30,3 @@ p {
 }
 
 
-@keyframes mymove {
-    from {background-color: red;}
-    to {background-color: blue;}
-  }
