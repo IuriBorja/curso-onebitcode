@@ -6,28 +6,32 @@
 
 
 .container {
+    padding: 10px;
     min-height: 93vh;
     background-color: darkgrey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    align-content: center;
-    
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 15px;
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 item4 item4"
+    "item5 item5 item6";
 }
 
 .item {
-    width: 250px;
-    height: 150px;
     background-color: white;
     border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 300px;
 }
+
+.item4 {    
+    grid-area: item4;
+}
+
+.item5 {
+    grid-area: item5;
+}
+
+
 
 
 .paragrafo {
@@ -36,7 +40,6 @@
 }
 
 .header, .footer {
-    flex-basis: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

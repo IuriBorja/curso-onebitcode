@@ -10,10 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    gap: 15px;
-    flex-wrap: wrap;
-}
+/*     flex-direction: column;
+ */    gap: 15px;
+/*     flex-wrap: wrap;
+ */}
 
 .item {
     width: 100%;
@@ -34,8 +34,10 @@
 
 .item2 {
     order: 3;
+   
 }
 
 .item3 {
     order: 1;
+    
 }
