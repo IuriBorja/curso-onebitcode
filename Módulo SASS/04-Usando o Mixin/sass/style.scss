@@ -1,0 +1,56 @@
+@mixin text-style ($color, $font-size, $font-family) {
+    color: $color;
+    font-size: $font-size;
+    font-family: $font-family;
+}
+
+@mixin button-style ($color, $background-color, $padding-rigth, $padding-left, $border-radius) {
+    color: $color;
+    background-color: $background-color;
+    padding-right: $padding-rigth;
+    padding-left: $padding-left;
+    border-radius: $border-radius;
+}
+
+
+.test {
+    @include button-style(white, black, 20px, 20px, 10px);
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+.teste2 {
+    @include button-style(white, black, 20px, 20px, 10px);
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+#teste3 {
+    @include button-style(white, black, 20px, 20px, 10px);
+
+    &:hover {
+        background-color: white;
+        color: black;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+}
+
+.text {
+    h1 {
+        @include text-style(#ff4043, 34, Arial);
+    }
+    p {
+        @include text-style(blue, 22px, sans-serif);
+    }
+}

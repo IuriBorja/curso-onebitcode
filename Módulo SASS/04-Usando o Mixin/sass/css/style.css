@@ -1,0 +1,54 @@
+.test {
+  color: white;
+  background-color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.test:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.teste2 {
+  color: white;
+  background-color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+.teste2:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#teste3 {
+  color: white;
+  background-color: black;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 10px;
+}
+#teste3:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.text h1 {
+  color: #ff4043;
+  font-size: 34;
+  font-family: Arial;
+}
+.text p {
+  color: blue;
+  font-size: 22px;
+  font-family: sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
