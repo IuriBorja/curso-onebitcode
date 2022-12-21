@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.coll {
+    border: black solid 1px;
+    background-color: red;
+    gap: 20px;
+}
