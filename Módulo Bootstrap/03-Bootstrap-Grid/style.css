@@ -5,9 +5,20 @@
 }
 
 
-
-.coll {
-    border: black solid 1px;
-    background-color: red;
+.row {
+    min-height: 100vh;
     gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.col-md-4 {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25vh;
+    border-radius: 10px;
 }
