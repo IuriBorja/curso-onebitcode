@@ -11,9 +11,9 @@ if (velVe1 < velVe2) {
 } else {
     alert(`${nomeVe1} é mais rapido do que ${nomeVe2}`);
 }
-
-
  */
+
+
 
 
 const nomeAtq = prompt("Insira o nome do personagem atacante:");
@@ -45,13 +45,55 @@ let danoVida =  vida - atqXDef;
 
 let danoVidaEscudo = vida - defXAtq;
 
-if (poderAtq > poderDef && escudo === false) {
-    alert(`O poder de ataque foi de ${poderAtq} sendo maior que a defesa de ${poderDef} e o defensor adversário estava sem escudo causando um dano de ${atqXDef} ao defensor ${nomeDef} e ficando com ${danoVida} pontos de vida!`);
-} else if (poderAtq > poderDef && escudo === true) {
-    alert(`O poder de ataque foi de ${poderAtq} sendo maior que a defesa ${poderDef} do defensor, porem ele usava escudo e com isso o dano caiu pela metade ficando ${defXAtq} e com ${danoVidaEscudo} pontos de vida.`);
+if (poderAtq > poderDef && escudo === "não") {
+    alert(`O poder de ataque de ${nomeAtq} foi de ${poderAtq} sendo maior que a defesa de ${poderDef} e o defensor ${nomeDef} estava sem escudo causando um dano de ${atqXDef} a ${nomeDef} e ficando com ${danoVida} pontos de vida!`);
+} else if (poderAtq > poderDef && escudo === "sim") {
+    alert(`O poder de ataque de ${nomeAtq} foi de ${poderAtq} sendo maior que a defesa ${poderDef} do defensor ${nomeDef}, porem ele usava escudo e com isso o dano caiu pela metade ficando ${defXAtq} e com ${danoVidaEscudo} pontos de vida.`);
 } else {
     alert(`O seu poder de ataque foi menor ou igual ao poder de defesa e portando o dano será 0.`);
 }
+
+alert(`${nomeAtq} \nPoder de ataque: ${poderAtq} \n\n ${nomeDef} \nPontos de vida: ${vida} \nPoder de defesa: ${poderDef} \nPossui escudo: ${escudo}`);
+
+
+
+
+
+
+/* ------MODELO DO PROFESSOR---------- */
+
+
+
+const atacante = prompt("Insira o nome do personagem atacante:");
+const poderDeAtaque = prompt("Insira o poder de ataque do personagem:");
+
+
+const defensor = prompt("Insira o nome do personagem defensivo:");
+let pontosDeVida = prompt("Quantos pontos de vida ele possui?");
+const poderDeDefesa = prompt("Qual é o seu poder de defesa?");
+const possuiEscudo = prompt("Ele possui escudo? (sim/não)");
+
+
+let danoCausado = 0;
+
+
+if (poderDeAtaque > poderDeDefesa && possuiEscudo === "não") {
+    danoCausado = poderDeAtaque - poderDeDefesa ;
+} else if (poderDeAtaque > poderDeDefesa && possuiEscudo === "sim") {
+    danoCausado = (poderDeAtaque - poderDeDefesa) / 2;
+}
+
+pontosDeVida -= danoCausado;
+
+
+alert(`${atacante} causou ${danoCausado} pontos de dano em ${defensor}`);
+
+alert(`${atacante} \nPoder de ataque: ${poderDeAtaque} \n\n ${defensor} \nPontos de vida: ${pontosDeVida} \nPoder de defesa: ${poderDeDefesa} \nPossui escudo: ${possuiEscudo}`);
+
+
+
+
+
 
 
 
@@ -75,4 +117,5 @@ calcular a quantidade de dano causado
 
 
 */
+
 
