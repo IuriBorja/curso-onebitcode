@@ -59,3 +59,8 @@ let teste = 10;
 ++teste;
 
 console.log(teste);
+
+
+
+
+(13 * "HTML"[3].length + "CSS"[0]) + 1
