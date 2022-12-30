@@ -15,40 +15,23 @@ visitou
 
 const nomeTurista = prompt("Diga seu nome:");
 
-const visitouCidade = prompt("Já visitou alguma cidade? (sim/não)");
+let visitouCidade = prompt("Já visitou alguma cidade? (sim/não)");
 
 
-if(visitouCidade === "não") {
-    alert("Ok, já perguntei o suficiente! :)");
-    alert(`Nome do turista:  ${nomeTurista} \nQuantas cidades visitadas: 0\nQuais cidades: 0`);
-} else {
-    alert("nada");
-}
+let visitouCidade2 = 0;
+let cidades = "";
 
+while (visitouCidade === "sim") {
+    let cidade = prompt("Qual a cidade?");
+    cidades += " - " + cidade + "\n"
+    visitouCidade2++;
+    visitouCidade = prompt("Já visitou outras?");
 
-
-let nomeCidade = prompt("Qual o nome da cidade?");
-
-let quantidades = [];
-let cidades = [];
-
-
-if(visitouCidade === "não") {
-    alert("Ok, já perguntei o suficiente! :)");
-} else {
-    alert("nada");
-}
-
-
-/* while (visitouCidade === "sim") {
-    visitouCidade = prompt("Já visitou outras? (sim/não)");
-    nomeCidade = prompt("Qual o nome da cidade?");
-    cidades += nomeCidade;
-
-    if(visitouCidade === "não") {
-        alert("Ok, já perguntei o suficiente! :)");
+    if (visitouCidade === "não") {
+        alert("Ok, já não tenho mais perguntas!");
         break;
     }
-} */
+}
 
-alert(`Nome do turista:  ${nomeTurista} \nQuantas cidades visitadas: ${cidades}\nQuais cidades: ${nomeCidade}`);
+
+alert(`Nome do turista: ${nomeTurista} \nQuantas cidades visitadas: ${visitouCidade2} \nQuais cidades ele visitou: \n ${cidades}`);
