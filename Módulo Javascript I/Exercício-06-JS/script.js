@@ -26,3 +26,6 @@ do {
     }
 
 } while (opcao !== "3")
+
+
+/* TIRAR DUVIDA SOBRE O PQ O PROFESSOR CRIOU UMA VARIAVEL VAZIA FORA DO WHILE e reatribuiu ela dentro do while depois */
