@@ -35,7 +35,6 @@ while (pergunta === "sim") {
     }
 }
 
-
 alert(
     `Nome do turista: ${turista} \n
     Quantidade de cidades visitadas: ${contagem} \n
@@ -43,12 +42,9 @@ alert(
 );
 
 
-
-
 /* const nomeTurista = prompt("Diga seu nome:");
 
 let visitouCidade = prompt("Já visitou alguma cidade? (sim/não)");
-
 
 let contagem = 0;
 let cidades = "";
@@ -64,7 +60,6 @@ while (visitouCidade === "sim") {
         break;
     }
 }
-
 
 
 alert(`Nome do turista: ${nomeTurista}
