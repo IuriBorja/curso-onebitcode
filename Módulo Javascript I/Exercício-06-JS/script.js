@@ -1,11 +1,11 @@
 
 let saldo = parseFloat(prompt("Digite seu saldo:"));
-/* let opcao = ""; */
+let opcao = "";
 
 
 
 do {
-    let = opcao = prompt(`
+    opcao = prompt(`
     Saldo atual: ${saldo}
     \n1. Adicionar valor.
     \n2. Remover valor.
@@ -28,4 +28,4 @@ do {
 } while (opcao !== "3")
 
 
-/* TIRAR DUVIDA SOBRE O PQ O PROFESSOR CRIOU UMA VARIAVEL VAZIA FORA DO WHILE e reatribuiu ela dentro do while depois */
+/* TIRAR DUVIDA SOBRE O PQ O PROFESSOR CRIOU UMA VARIAVEL VAZIA FORA DO WHILE e reatribuiu ela dentro do dowhile */
