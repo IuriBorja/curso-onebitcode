@@ -23,7 +23,7 @@ if (ehPalindromo) {
 
 /* FORMA DO PROFESSOR */
 
-
+/* 
 
 const word = prompt("Digite uma palavra:");
 
@@ -39,3 +39,36 @@ if (word === invertWord) {
     alert(`${word} não é um palíndromo!\n\n
     ${word} !== ${invertWord}`);
 }
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const palavra2 = prompt("Digite uma palavra:");
+
+let palavraInvertida = "";
+
+for (let i = palavra2.length - 1; i >= 0; i--) {
+    palavraInvertida += palavra2[i];
+}
+
+
+if (palavra2 === palavraInvertida) {
+    alert(`${palavra2} é um palíndromo!`);
+} else {
+    alert(`${palavra2} não é um palíndromo \n\n
+    ${palavra2} !== ${palavraInvertida}`);
+}
+
