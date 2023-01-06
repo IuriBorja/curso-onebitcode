@@ -23,7 +23,7 @@ if (ehPalindromo) {
 
 /* FORMA DO PROFESSOR */
 
-/* 
+
 
 const word = prompt("Digite uma palavra:");
 
@@ -41,7 +41,6 @@ if (word === invertWord) {
 }
 
 
- */
 
 
 
@@ -49,13 +48,7 @@ if (word === invertWord) {
 
 
 
-
-
-
-
-
-
-
+/* 
 const palavra2 = prompt("Digite uma palavra:");
 
 let palavraInvertida = "";
@@ -72,3 +65,4 @@ if (palavra2 === palavraInvertida) {
     ${palavra2} !== ${palavraInvertida}`);
 }
 
+ */
