@@ -34,3 +34,19 @@ ultimoElemento = arr.shift();
 console.log(arr);
 console.log(ultimoElemento);
 
+
+
+//includes - serve para verificar se um elemento existe no array
+
+let arr = [1, 2, 3, 4, 5];
+console.log(arr.includes(3)); // true
+console.log(arr.includes(6)); // false
+
+
+
+let array2 = ["Iuri", "Maria", "Joaquina", "Zezin"];
+
+for (let i = 0; i < array2.length; i++) {
+    const elemento = array2[i] ; 
+    console.log(`${elemento} se encontra na posição ${i}`);
+}
