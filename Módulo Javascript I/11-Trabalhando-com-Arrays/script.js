@@ -38,9 +38,9 @@ console.log(ultimoElemento);
 
 //includes - serve para verificar se um elemento existe no array
 
-let arr = [1, 2, 3, 4, 5];
-console.log(arr.includes(3)); // true
-console.log(arr.includes(6)); // false
+let array3 = [1, 2, 3, 4, 5];
+console.log(array3.includes(3)); // true
+console.log(array3.includes(6)); // false
 
 
 
