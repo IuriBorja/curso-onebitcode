@@ -1,12 +1,6 @@
 let menu = "";
-let numeroImoveis = 0;
 let salvarImoveis = [];
-let informacoesImoveis = {
-    nome: "",
-    quartos: 0,
-    banheiros: 0,
-    garagem: ""
-};
+
 
 
 do {
@@ -18,13 +12,41 @@ do {
 
     switch(menu) {
         case "1":
-            const 
+            const imovel = {};
+
+            imovel.proprietario = prompt("Nome do proprietário: ");
+            imovel.quartos = prompt("Quantos quartos? ");
+            imovel.banheiros = prompt("Quantos banheiros? ");
+            imovel.garagem = prompt("Possui garagem? (Sim/Não)");
+
+            const confirmacao = confirm(
+                `Salvar este imóvel?\n
+                \nProprietário: ${imovel.proprietario}
+                \nQuartos: ${imovel.quartos}
+                \nBanheiros: ${imovel.banheiros}
+                \nGaragem: ${imovel.garagem}`
+            );
+
+            if (confirmacao) {
+                salvarImoveis.push(imovel);
+                alert("Imovel salvo com sucesso!");
+            } else {
+                alert("Voltando ao menu.");
+            }
+
             break;
         case "2":
-            let imoveis = prompt(`Nome: ${nome}\n
-            Quartos: ${quartos}\n
-            Banheiros: ${banheiros}\n
-            Garagem: ${garagem}`);
+            
+            for (let i = 0; i < salvarImoveis.length; i++) {
+                alert(
+                    `Imóvel: ${i + 1}
+                    \nProprietário: ${salvarImoveis[i].proprietario}
+                    \nQuartos: ${salvarImoveis[i].quartos}
+                    \nBanheiros: ${salvarImoveis[i].banheiros}
+                    \nPossui garagem? ${salvarImoveis[i].garagem}`
+                );
+            }
+
             break;
         case "3":
             alert("Encerrando...");
