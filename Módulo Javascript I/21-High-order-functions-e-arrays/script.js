@@ -71,4 +71,20 @@ console.log(orcs2);
 /* SERVE PARA TRANSFORMAR UMA ARRAY EM UM OUTRO ELEMENTO , EM OUTRO VALOR, SEJA UM ARRAY, UM OBJETO, UMA STRING, QUALQUER COISA*/
 
 
+const nivelTotal = personagens.reduce(function (valorAcumulado, personagem) {
+    return valorAcumulado + personagem.nivel;
+}, 0);
 
+console.log(nivelTotal);
+
+
+const racas = personagens.reduce(function (valorAcumulado, personagem) {
+    if (valorAcumulado[personagem.raca]) {
+        valorAcumulado[personagem.raca].push(personagem);
+    } else {
+        valorAcumulado[personagem.raca] = [personagem];
+    }
+    return valorAcumulado;
+}, {});
+
+console.log(racas);
