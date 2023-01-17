@@ -88,3 +88,17 @@ const racas = personagens.reduce(function (valorAcumulado, personagem) {
 }, {});
 
 console.log(racas);
+
+
+
+
+/* USANDO O MÉTODO SORT */
+
+/*Ela modifica o array original e retorna o array classificado. */
+
+
+personagens.sort(function(a, b) {
+    return a.nivel - b.nivel; // faz com que seja mostrado um novo array com os niveis descrescente
+});
+
+console.log(personagens);
