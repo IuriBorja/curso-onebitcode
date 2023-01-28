@@ -8,7 +8,7 @@ let result = alert(`
 Primeiro nome: ${primeiroNome}\n
 Sobrenome: ${sobreNome}\n
 Campo de Estudo: ${campoEstudo}\n
-Ano de Nascimento: ${anoNascimento}`);
+Idade: ${ 2023 - anoNascimento}`);
 
 
 
@@ -26,6 +26,10 @@ Resultado soma: ${num1 + num2}\n
 Resultado subtração: ${num1 - num2}\n
 Resultado multiplicação: ${num1 * num2}\n
 Resultado divisão: ${num1 / num2}`);
+
+
+
+
 
 
 
