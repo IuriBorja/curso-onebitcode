@@ -20,9 +20,3 @@ toolkit.bruteForce(terminal, accounts, function(username, password) {
     var success = terminal.login(username, password);
     toolkit.spy(terminal, "root", next);
 });
-
-
-
-function () {
-    
-}
